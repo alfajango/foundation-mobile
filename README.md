@@ -37,6 +37,31 @@ components.
 ![mobile lists
 screenshot](http://s3.alfajango.com/github-readmes/foundation-mobile-lists.png)
 
+```html
+<ul class="mobile-list">
+  <li>
+    <a href="/weezer">Weezer</a>
+    <span class="chevron"></span>
+  </li>
+  <li>
+    <a href="/the-pixies">The Pixies</a>
+    <span class="chevron"></span>
+  </li>
+  <li>
+    <a href="/chevelle">Chevelle</a>
+    <span class="chevron"></span>
+  </li>
+  <li>
+    <a href="/five-finger-death-punch">Five Finger Death Punch</a>
+    <span class="chevron"></span>
+  </li>
+  <li>
+    <a href="/in-this-moment">In This Moment</a>
+    <span class="chevron"></span>
+  </li>
+</ul>
+```
+
 ### Coming Soon
 
 See the [issue
