@@ -46,21 +46,37 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <p>This demo is using Foundation version 4.1.6 with Foundation Mobile.</p>
+      <p>Full-window dropdowns make dropdowns more prominent on mobile devices and work better with mobile list elements.</p>
       <hr />
     </div>
   </div>
 
   <div class="row">
     <div class="large-8 columns">
-      <h3>The Components</h3>
+      <h3>Normal Dropdown</h3>
 
-      <!-- Grid Example -->
       <div class="row">
         <div class="large-12 columns">
-          <ul class="mobile-list">
-            <li><a href="lists.html">Mobile-friendly lists</a></li>
-            <li><a href="dropdowns.html">Full-window dropdowns</a></li>
+          <a href="#" data-dropdown="drop1" class="button dropdown">Dropdown Button</a><br>
+
+          <ul id="drop1" data-dropdown-content class="f-dropdown">
+            <li><a href="#">This is a link</a></li>
+            <li><a href="#">This is another</a></li>
+            <li><a href="#">Yet another</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Full-width Dropdown</h3>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <a href="#" data-dropdown="drop2" class="button dropdown">Dropdown Button</a><br>
+
+          <ul id="drop2" data-dropdown-content class="f-dropdown full-size">
+            <li><a href="#">This is a link</a></li>
+            <li><a href="#">This is another</a></li>
+            <li><a href="#">Yet another</a></li>
           </ul>
         </div>
       </div>
