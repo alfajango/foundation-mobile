@@ -6,6 +6,9 @@
  * http://www.opensource.org/licenses/mit-license.php
 */
 
+// Don't really need anything in here yet, since we're building off of Foundation,
+// and the nice folks at Zurb have done all the heavy lifting already.
+;
 ;(function ($, window, document, undefined) {
   'use strict';
 
@@ -36,3 +39,9 @@
   }});
 
 }(Foundation.zj, this, this.document));
+/*
+
+
+*/
+
+;

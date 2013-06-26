@@ -130,3 +130,24 @@ Sencha violates our "HTML5 should be used for layout" ideal, as you
 build the whole app in JS and then their framework compiles the needed
 HTML5. [KendoUI](http://www.kendoui.com/), [Sencha
 Touch](http://www.sencha.com/products/touch/)
+
+## Development
+
+When developing or updating a component, it's useful to update the
+version of Foundation Mobile used in the demo app in the docs. To do so,
+compile the foundation-mobile source into the docs app.
+
+Compile the foundation-mobile CSS from the command line. Make sure you
+have the `sass` rubygem installed (you can do so with `bundle install`):
+
+```
+scss scss/foundation-mobile.scss docs/css/foundation-mobile.css
+```
+
+Compile the foundation-mobile JS from the command line. Make sure you
+have the `sprockets` rubygem installed (you can do so with `bundle
+install`):
+
+```
+sprockets -I js/ js/foundation-mobile/index.js > docs/js/foundation-mobile.js
+```
