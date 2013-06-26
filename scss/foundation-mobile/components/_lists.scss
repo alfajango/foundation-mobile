@@ -1,5 +1,4 @@
 .mobile-list li{
-	padding: 15px 60px;
 	list-style-type: none;
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
@@ -7,9 +6,20 @@
 	position: relative;
 	a{
 		display: block;
-		padding: inherit;
-		margin: -15px -40px;
+		padding-left: 20px;
+		padding-right: 30px;
+		padding-bottom: 15px;
+		padding-top: 15px;
+		
 	}
+}
+
+.mobile-list.with-icons li a{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 75px;
+	padding-right: 30px;
+
 }
 
 .mobile-list li:first-child{
@@ -38,14 +48,13 @@
 	right: 5%;
 }
 
-.mobile-list li .mobile-icon{
+.mobile-list li a .mobile-icon{
 	float: left;
 	display: block;
 	position: absolute;
 	width: 5%;
 	min-width: 45px;
-	margin-top: -5px;
-	margin-left: -35px;
+	margin-left: -50px;
 	padding-right: 10px;
 	img{
 		width: 100%;

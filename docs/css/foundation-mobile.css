@@ -1,17 +1,24 @@
 .mobile-list li {
-  padding: 15px 60px;
   list-style-type: none;
-  border-left: 1px solid #cccccc;
-  border-right: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   position: relative; }
   .mobile-list li a {
     display: block;
-    padding: inherit;
-    margin: -15px -40px; }
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px; }
+
+.mobile-list.with-icons li a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 75px;
+  padding-right: 30px; }
 
 .mobile-list li:first-child {
-  border-top: 1px solid #cccccc; }
+  border-top: 1px solid #ccc; }
 
 .mobile-list li.round {
   -webkit-border-radius: 1000px;
@@ -27,22 +34,21 @@
   padding: 0px;
   margin: 0px;
   margin-top: -10px;
-  border-top: 5px solid #cccccc;
-  border-right: 5px solid #cccccc;
+  border-top: 5px solid #ccc;
+  border-right: 5px solid #ccc;
   position: absolute;
   top: 50%;
   right: 5%; }
 
-.mobile-list li .mobile-icon {
+.mobile-list li a .mobile-icon {
   float: left;
   display: block;
   position: absolute;
   width: 5%;
   min-width: 45px;
-  margin-top: -5px;
-  margin-left: -35px;
+  margin-left: -50px;
   padding-right: 10px; }
-  .mobile-list li .mobile-icon img {
+  .mobile-list li a .mobile-icon img {
     width: 100%; }
 
 @media only screen and (min-width: 48em) {
