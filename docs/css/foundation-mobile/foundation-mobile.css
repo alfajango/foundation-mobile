@@ -1,0 +1,50 @@
+.mobile-list li {
+  padding: 15px 60px;
+  list-style-type: none;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  position: relative; }
+  .mobile-list li a {
+    display: block;
+    padding: inherit;
+    margin: -15px -40px; }
+
+.mobile-list li:first-child {
+  border-top: 1px solid #cccccc; }
+
+.mobile-list li.round {
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px; }
+
+.mobile-list li .chevron {
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: block;
+  float: right;
+  padding: 0px;
+  margin: 0px;
+  margin-top: -10px;
+  border-top: 5px solid #cccccc;
+  border-right: 5px solid #cccccc;
+  position: absolute;
+  top: 50%;
+  right: 5%; }
+
+.mobile-list li .mobile-icon {
+  float: left;
+  display: block;
+  position: absolute;
+  width: 5%;
+  min-width: 45px;
+  margin-top: -5px;
+  margin-left: -35px;
+  padding-right: 10px; }
+  .mobile-list li .mobile-icon img {
+    width: 100%; }
+
+@media only screen and (min-width: 48em) {
+  .mobile-list li {
+    padding: 15px 40px 15px 70px; } }
