@@ -45,21 +45,39 @@
   </nav>
 
   <div class="row">
-    <div class="large-12 columns">
-      <p>Coming soon.</p>
-      <hr />
+    <div class="large-8 columns">
+      <h2>Full-screen Modal Windows</h2>
+
+      <p>Foundation comes with a modal window component called <a href="">Reveal</a>. Foundation provides six (including the default) CSS-class size options.</p>
+      <p>When using mobile, it's useful to have modal windows take up the full screen; no more, no less. Foundation Mobile provides this as a seventh size option.</p>
+
     </div>
   </div>
 
+  <hr />
+
   <div class="row">
     <div class="large-8 columns">
-      <h3>Modal Windows</h3>
 
-      <div class="row">
-        <div class="large-12 columns">
-        </div>
-      </div>
+      <p>To use the full-screen modal, just add the <code>full-screen</code> class to your <code>div.reveal-modal</code> element.</p>
+
+      <a href="#" class="button" data-reveal-id="my-modal">Click Me For A Modal</a>
+
+      <p><em>Make sure that your modal element is nested directly under the <code>body</code> element, so that it gets positioned relative to the screen rather than some other element in the DOM.</em></p>
+      <p>Unlike the six original size options provided in Foundation, this class attaches some JavaScript functionality to the modal to size it exactly right for the screen.
+      It also does some magic with the <code>close-reveal-modal</code> element to keep it at a fixed position on the screen as the user scrolls, so that they don't need to scroll back up to close the modal element.</p>
+
     </div>
+  </div>
+
+  <div id="my-modal" class="reveal-modal full-screen">
+    <h2>This is a modal</h2>
+    <p class="lead">with many cats</p>
+    <p><img class="kitteh" src="http://placekitten.com/g/500/800" />
+    <img class="kitteh" src="http://placekitten.com/g/500/800" />
+    <img class="kitteh" src="http://placekitten.com/g/500/800" />
+    <img class="kitteh" src="http://placekitten.com/g/500/800" /></p>
+    <a class="close-reveal-modal">&#215;</a>
   </div>
 
   <script>

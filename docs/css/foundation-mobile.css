@@ -85,3 +85,22 @@
   color: #FFFFFF; }
   .bottom-bar h1, .bottom-bar h2, .bottom-bar h3, .bottom-bar h4, .bottom-bar h5, .bottom-bar h6 {
     color: #FFFFFF; }
+
+.full-screen {
+  top: 15px;
+  left: 15px;
+  margin-left: 0;
+  overflow: auto; }
+
+.full-screen-close {
+  font-size: 1.375em;
+  line-height: 1;
+  position: absolute;
+  top: 0.5em;
+  right: 0.6875em;
+  color: #aaaaaa;
+  font-weight: bold;
+  cursor: pointer; }
+
+.full-screen-close-marker {
+  display: none; }

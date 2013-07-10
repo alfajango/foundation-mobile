@@ -1,0 +1,21 @@
+.full-screen {
+  top: 15px;
+  left: 15px;
+  margin-left: 0;
+  overflow: auto;
+}
+
+.full-screen-close {
+  font-size: 1.375em;
+  line-height: 1;
+  position: absolute;
+  top: 0.5em;
+  right: 0.6875em;
+  color: #aaaaaa;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.full-screen-close-marker {
+  display: none;
+}
