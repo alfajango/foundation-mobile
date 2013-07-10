@@ -46,16 +46,15 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <p>The lists component makes unordered and ordered list elements full-width and taller for easier touch-clicking.</p>
+      <h2>Mobile-friendly Lists</h2>
+      <p>The mobile-lists component makes unordered and ordered list elements full-width and taller for easier touch-clicking.</p>
       <hr />
     </div>
   </div>
 
   <div class="row">
     <div class="large-8 columns">
-      <h3>Plain Lists</h3>
-
-      <p>Just add the <code>mobile-list</code> class to your <code>ul</code> elements.</p>
+      <p>Just add the <code>mobile-list</code> class to your <code>ul</code> or <code>ol</code> element.</p>
 
       <div class="row">
         <div class="large-12 columns">
@@ -69,7 +68,7 @@
 
       <h3>With Icons</h3>
 
-      <p>Want icons in your unordered list? Just tack on the the <code>with-icons</code> class to your <code>ul mobile-list</code> elements.</p>
+      <p>Want icons in your unordered list? Just tack on the the <code>with-icons</code> class to your <code>ul.mobile-list</code> element, and place your icons inside the list links.</p>
 
       <div class="row">
         <div class="large-12 columns">
@@ -81,16 +80,19 @@
         </div>
       </div>
 
+      <p><em>The icons above are from the <a href="http://zurb.com/playground/foundation-icons">Foundation Icons</a> font set.</em></p>
+
       <h3>With Chevrons</h3>
 
-      <p>Need a chevron at the end of your list item? Add a <code>span</code> with the class <code>chevron</code> Inside your <code>li</code> element.</p>
+      <p>Need a chevron at the end of your list item? Add this inside your <code>li</code> element:</p>
+      <p><pre><code>&lt;i class="chevron"&gt;&lt;/i&gt;</code></pre></p>
 
       <div class="row">
         <div class="large-12 columns">
           <ul class="mobile-list with-icons">
-            <li><a href="#"><i class="foundicon-page mobile-icon"></i>List item 1<span class="chevron"></span></a></li>
-            <li><a href="#"><i class="foundicon-settings mobile-icon"></i>List item 2<span class="chevron"></span></a></li>
-            <li><a href="#"><i class="foundicon-star mobile-icon"></i>List item 3<span class="chevron"></span></a></li>
+            <li><a href="#"><i class="foundicon-page mobile-icon"></i>List item 1<i class="chevron"></i></a></li>
+            <li><a href="#"><i class="foundicon-settings mobile-icon"></i>List item 2<i class="chevron"></i></a></li>
+            <li><a href="#"><i class="foundicon-star mobile-icon"></i>List item 3<i class="chevron"></i></a></li>
           </ul>
         </div>
       </div>
@@ -102,9 +104,9 @@
       <div class="row">
         <div class="large-12 columns">
           <ul class="mobile-list with-icons round">
-            <li><a href="#"><i class="foundicon-page mobile-icon"></i>List item 1<span class="chevron"></span></a></li>
-            <li><a href="#"><i class="foundicon-settings mobile-icon"></i>List item 2<span class="chevron"></span></a></li>
-            <li><a href="#"><i class="foundicon-star mobile-icon"></i>List item 3<span class="chevron"></span></a></li>
+            <li><a href="#"><i class="foundicon-page mobile-icon"></i>List item 1<i class="chevron"></i></a></li>
+            <li><a href="#"><i class="foundicon-settings mobile-icon"></i>List item 2<i class="chevron"></i></a></li>
+            <li><a href="#"><i class="foundicon-star mobile-icon"></i>List item 3<i class="chevron"></i></a></li>
           </ul>
         </div>
       </div>
