@@ -6,7 +6,7 @@
   Foundation.libs.bottombar = {
     name : 'bottombar',
 
-    version : '4.2.3',
+    version : '4.1.5',
 
     settings : {
       init : false
