@@ -1,0 +1,16 @@
+.fixed-bottom {
+  width: 100%;
+  left: 0;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+}
+
+.bottom-bar {
+  margin-bottom: 0;
+  margin-top: 1.875em;
+  color: #FFFFFF;
+  h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF;
+  }
+}

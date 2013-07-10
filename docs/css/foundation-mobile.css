@@ -72,3 +72,16 @@
 @media only screen and (min-width: 48em) {
   .mobile-list li {
     padding: 15px 40px 15px 70px; } }
+.fixed-bottom {
+  width: 100%;
+  left: 0;
+  position: fixed;
+  bottom: 0;
+  z-index: 99; }
+
+.bottom-bar {
+  margin-bottom: 0;
+  margin-top: 1.875em;
+  color: #FFFFFF; }
+  .bottom-bar h1, .bottom-bar h2, .bottom-bar h3, .bottom-bar h4, .bottom-bar h5, .bottom-bar h6 {
+    color: #FFFFFF; }

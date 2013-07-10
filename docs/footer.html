@@ -17,49 +17,69 @@
 </head>
 <body>
 
-  <nav class="top-bar">
-    <ul class="title-area">
-      <!-- Title Area -->
-      <li class="name">
-      <h1><a href="index.html">Foundation Mobile Demo </a></h1>
-      </li>
-      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-    </ul>
-
-    <section class="top-bar-section">
-      <!-- Left Nav Section -->
-      <ul class="left">
-        <li class="divider"></li>
-        <li class="active"><a href="/">Home</a></li>
-        <li class="divider"></li>
+  <div class="fixed">
+    <nav class="top-bar">
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+        <h1><a href="index.html">Foundation Mobile Demo </a></h1>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
       </ul>
 
-      <!-- Right Nav Section -->
-      <ul class="right">
-        <li class="divider hide-for-small"></li>
-        <li><a href="http://opensource.alfajango.com/foundation-mobile">Project Homepage</a>
-        <li><a href="https://github.com/alfajango/foundation-mobile">Github</a>
-      </ul>
-    </section>
-  </nav>
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li class="divider"></li>
+          <li class="active"><a href="/">Home</a></li>
+          <li class="divider"></li>
+        </ul>
+
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="divider hide-for-small"></li>
+          <li><a href="http://opensource.alfajango.com/foundation-mobile">Project Homepage</a>
+          <li><a href="https://github.com/alfajango/foundation-mobile">Github</a>
+        </ul>
+      </section>
+    </nav>
+  </div>
 
   <div class="row">
     <div class="large-12 columns">
-      <p>Coming soon.</p>
+      <h2>Fixed Bottom Bar <small>(mobile footer)</small></h2>
+      <p>Foundation already includes the ability to have a fixed top nav bar by just wrapping it in a <code>&lt;div class="fixed"&gt;</code> element.</p>
+      <p>However, Foundation doesn't include the ability to use nav bars as footers, or to have them fixed to the bottom of the screen; a common scenario for mobile web apps.</p>
       <hr />
     </div>
   </div>
 
   <div class="row">
     <div class="large-8 columns">
-      <h3>Fixed Footer</h3>
-
-      <div class="row">
-        <div class="large-12 columns">
-        </div>
-      </div>
+      <p>To make a bottom bar, create a standard <a href="http://foundation.zurb.com/docs/components/top-bar.html">Foundation top-bar</a> at the bottom of the page, and add the <code>bottom-bar</code> class to it.</p>
+      <p><em>Yes, it's a little awkward to have <code>&lt;nav class="top-bar bottom-bar"&gt;</code>, but just go with it for now.</em></p>
+      <p>To make it fixed to the bottom of the window, wrap it in <code>&lt;div class="fixed-bottom"&gt;</code>.</p>
+      <p>In order to demonstrate fixed bottom bar on this page, we need this page to be taller than your screen height, so that you can scroll the page. Here's a tall picture of a kitten.</p>
+      <p><img id="kitten" src="http://placekitten.com/g/200/800" /></p>
     </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <p><em>Note that fixed toolbars can be a bit complicated on some older mobile browsers, due to their lack of support for the <code>position: fixed</code> and known issues with scrolling. See <a href="http://jquerymobile.com/demos/1.2.1/docs/toolbars/bars-fixed.html">jQuery Mobile's notes</a> about mobile browser support for fixed toolbars.</em></p>
+    </div>
+  </div>
+
+  <div class="fixed-bottom">
+    <nav class="top-bar bottom-bar">
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+        <h1><a id="surprise" href="#">Fixed footer! </a></h1>
+        </li>
+      </ul>
+    </nav>
   </div>
 
   <script>
@@ -105,6 +125,20 @@
 
   <script>
     $(document).foundation();
+
+    // Kitteh!
+    var width = $(window).width(),
+        $kitten = $('#kitten'),
+        $parent = $kitten.parent(),
+        padding = parseInt($parent.css('padding-left')) + parseInt($parent.css('padding-right'));
+    width = width - padding;
+    $kitten.attr('src', 'http://placekitten.com/g/' + width + '/800');
+
+    $('#surprise').click(function(e) {
+      alert("Surprise Kitteh!\n(in color)");
+      $kitten.attr('src', 'http://placekitten.com/' + width + '/800');
+      e.preventDefault();
+    });
   </script>
 </body>
 </html>
