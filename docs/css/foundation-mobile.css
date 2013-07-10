@@ -104,3 +104,11 @@
 
 .full-screen-close-marker {
   display: none; }
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+*[data-truncate] {
+  cursor: pointer; }

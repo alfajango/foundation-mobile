@@ -43,31 +43,43 @@
       </ul>
     </section>
   </nav>
+  <nav class="top-bar secondary mobile-breadcrumbs">
+    <section class="top-bar-section">
+      <div id="breadcrumbs">
+        <ul class="left back-button">
+          <li>
+            <a href="index.html">◀ Back</a>
+          </li>
+        </ul>
+        <ul class="left dropdown-button">
+          <li class="has-dropdown active">
+            <a class="truncate" href="#">Truncated elements </a>
+            <ul class="dropdown">
+              <li><a href="index.html">Demo homepage</a></li>
+              <li><a href="/">Source code</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </nav>
 
   <div class="row">
     <div class="large-12 columns">
-      <p>This demo is using Foundation version 4.1.6 with Foundation Mobile.</p>
+      <h2>Truncated elements</h2>
+      <p>Sometimes, you have really long titles or sentences that are meant for summary purposes, and you only want them to take up one line in the layout.</p>
       <hr />
     </div>
   </div>
 
   <div class="row">
-    <div class="large-8 columns">
-      <h3>The Components</h3>
+    <div class="large-12 columns">
+      <p>Just add the <code>truncate</code> class to any element to have it truncated to one visual line in the layout and get appended ellipses.</p>
+      <p>You may also add the <code>data-truncate=true</code> attribute to make it expand when clicked.</p>
 
-      <!-- Grid Example -->
-      <div class="row">
-        <div class="large-12 columns">
-          <ul class="mobile-list">
-            <li><a href="lists.html">Mobile-friendly lists <i class="chevron"></i></a></li>
-            <li><a href="dropdowns.html">Mobile-friendly dropdowns <i class="chevron"></i></a></li>
-            <li><a href="footer.html">Fixed bottom bar (mobile footer) <i class="chevron"></i></a></li>
-            <li><a href="modal-windows.html">Full-screen modal windows <i class="chevron"></i></a></li>
-            <li><a href="truncated-elements.html">Truncated elements <i class="chevron"></i></a></li>
-            <li><a href="responsive-tables.html">Responsive tables <i class="chevron"></i></a></li>
-          </ul>
-        </div>
-      </div>
+      <p class="truncate panel" data-truncate=true>Here's a truncated block of text that gets truncated to one line and expanded when clicked.</p>
+
+      <p><em>Also, check out the mobile breadcrumb bar at the top which truncates the name of the current page. Since it's used only as an non-critical indicator of the page the person is on, it doesn't need to expand when clicked, so we left out the <code>data-truncate</code> option.</em></p>
     </div>
   </div>
 
