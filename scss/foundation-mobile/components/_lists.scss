@@ -64,6 +64,19 @@
       }
     }
   }
+
+  &.f-dropdown {
+    padding: 0;
+    border-left: none;
+    border-right: none;
+
+    li:first-child {
+      border-top: none;
+    }
+    li:last-child {
+      border-bottom: none;
+    }
+  }
 }
 
 @media only screen and (min-width: 48em) {

@@ -45,19 +45,14 @@
   </nav>
 
   <div class="row">
-    <div class="large-12 columns">
-      <p>Full-window dropdowns make dropdowns more prominent on mobile devices and work better with mobile list elements.</p>
-      <hr />
-    </div>
-  </div>
-
-  <div class="row">
     <div class="large-8 columns">
-      <h3>Normal Dropdown</h3>
+      <h3>Mobile-friendly dropdown</h3>
+
+      <p>Normal Foundation dropdowns containing a list of links are awkward for mobile; the links are close together and the spacing is unbalanced.</p>
 
       <div class="row">
         <div class="large-12 columns">
-          <a href="#" data-dropdown="drop1" class="button dropdown">Dropdown Button</a><br>
+          <a href="#" data-dropdown="drop1" class="button dropdown">Normal Dropdown</a><br>
 
           <ul id="drop1" data-dropdown-content class="f-dropdown">
             <li><a href="#">This is a link</a></li>
@@ -67,13 +62,11 @@
         </div>
       </div>
 
-      <h3>Full-width Dropdown</h3>
-
-      <p> Just add <code>full-size</code> to your <code>data-dropdown-content</code> element.</p>
+      <p>Dropdowns containing both the <code>f-dropdown</code> class and the <code>mobile-list</code> class will automatically apply additional styling for attractive mobile-friendly dropdown lists.</p>
 
       <div class="row">
         <div class="large-12 columns">
-          <a href="#" data-dropdown="drop2" class="button dropdown">Dropdown Button</a><br>
+          <a href="#" data-dropdown="drop2" class="button dropdown">Mobile-friendly Dropdown</a><br>
 
           <ul id="drop2" data-dropdown-content class="f-dropdown mobile-list">
             <li><a href="#">This is a link</a></li>

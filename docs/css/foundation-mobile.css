@@ -45,6 +45,14 @@
   padding-bottom: 15px;
   padding-left: 75px;
   padding-right: 30px; }
+.mobile-list.f-dropdown {
+  padding: 0;
+  border-left: none;
+  border-right: none; }
+  .mobile-list.f-dropdown li:first-child {
+    border-top: none; }
+  .mobile-list.f-dropdown li:last-child {
+    border-bottom: none; }
 
 @media only screen and (min-width: 48em) {
   .mobile-list li {
