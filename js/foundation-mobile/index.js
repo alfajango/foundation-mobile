@@ -5,4 +5,5 @@
 =require foundation-mobile/foundation-mobile.truncate
 =require foundation-mobile/foundation-mobile.breadcrumbs
 =require foundation-mobile/foundation-mobile.collapsible
+=require foundation-mobile/foundation-mobile.back
 */
