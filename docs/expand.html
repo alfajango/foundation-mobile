@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="css/foundation/foundation.css" />
   <link rel="stylesheet" href="css/foundation-mobile.css" />
-
+  <link rel="stylesheet" href="css/vendor/fonts.css" />
 
   <script src="js/vendor/custom.modernizr.js"></script>
 
@@ -46,32 +46,45 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <p>This demo is using Foundation Mobile with Foundation version 4.2.3 and should work fine with Foundation 4.x.x.</p>
+      <h2>Expandable Elements</h2>
+      <p>Foundation provides a useful class for buttons called
+      <code>expand</code> which expands a button element to the
+      full-width of the page.</p>
+      <p>There are several other element types which could greatly
+      benefit from full-width expansion and 0-width padding on mobile,
+      and Foundation Mobile adds those.
       <hr />
     </div>
   </div>
 
   <div class="row">
     <div class="large-8 columns">
-      <h3>The Components</h3>
+      <h3>Expandable button groups</h3>
+      <p>Add the <code>full-width</code> class to button-groups to go
+      from this:.</p>
 
-      <!-- Grid Example -->
       <div class="row">
         <div class="large-12 columns">
-          <ul class="mobile-list">
-            <li><a href="lists.html">Mobile-friendly lists <i class="chevron"></i></a></li>
-            <li><a href="collapsible.html">Collapsible content <i class="chevron"></i></a></li>
-            <li><a href="dropdowns.html">Mobile-friendly dropdowns <i class="chevron"></i></a></li>
-            <li><a href="footer.html">Fixed bottom bar (mobile footer) <i class="chevron"></i></a></li>
-            <li><a href="modal-windows.html">Full-screen modal windows <i class="chevron"></i></a></li>
-            <li><a href="truncated-elements.html">Truncated elements <i class="chevron"></i></a></li>
-            <li><a href="back-button.html">Back Button <i class="chevron"></i></a></li>
-            <li><a href="breadcrumbs.html">Mobile-friendly breadcrumbs <i class="chevron"></i></a></li>
-            <li><a href="responsive-tables.html">Responsive tables <i class="chevron"></i></a></li>
-            <li><a href="expand.html">Expandable elements <i class="chevron"></i></a></li>
+          <ul class="button-group even-3">
+            <li><a href="#" class="button secondary">Some Link</a></li>
+            <li><a href="#" class="button secondary">Some Link</a></li>
+            <li><a href="#" class="button secondary">Some Link</a></li>
           </ul>
         </div>
       </div>
+
+      <p>To this:</p>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <ul class="button-group even-3 full-width">
+            <li><a href="#" class="button secondary">Some Link</a></li>
+            <li><a href="#" class="button secondary">Some Link</a></li>
+            <li><a href="#" class="button secondary">Some Link</a></li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
 
