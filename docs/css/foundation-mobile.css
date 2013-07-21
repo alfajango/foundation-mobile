@@ -162,78 +162,108 @@
 
 /* Block Grid expand */
 [class*="block-grid-"].expand {
-  margin: 0; }
+  margin: 0 -0.9375em 1.25em; }
+
+[class*="block-grid-"].expand-inner {
+  margin: 0 0 1.25em; }
 
 /* Foundation Block Grids for below small breakpoint */
 @media only screen {
-  .small-block-grid-1.expand > li {
+  .small-block-grid-1.expand > li,
+  .small-block-grid-1.expand-inner > li {
     padding: 0; }
 
-  .large-block-grid-1.expand > li {
+  .large-block-grid-1.expand > li,
+  .large-block-grid-1.expand-inner > li {
     padding: 0; }
 
-  .small-block-grid-2.expand > li {
+  .small-block-grid-2.expand > li,
+  .small-block-grid-2.expand-inner > li {
     padding: 0; }
 
-  .large-block-grid-2.expand > li {
+  .large-block-grid-2.expand > li,
+  .large-block-grid-2.expand-inner > li {
     padding: 0; }
 
-  .small-block-grid-3.expand > li {
+  .small-block-grid-3.expand > li,
+  .small-block-grid-3.expand-inner > li {
     padding: 0; }
 
-  .large-block-grid-3.expand > li {
+  .large-block-grid-3.expand > li,
+  .large-block-grid-3.expand-inner > li {
     padding: 0; }
 
-  .small-block-grid-4.expand > li {
+  .small-block-grid-4.expand > li,
+  .small-block-grid-4.expand-inner > li {
     padding: 0; }
 
-  .large-block-grid-4.expand > li {
+  .large-block-grid-4.expand > li,
+  .large-block-grid-4.expand-inner > li {
     padding: 0; }
 
-  .small-block-grid-5.expand > li {
+  .small-block-grid-5.expand > li,
+  .small-block-grid-5.expand-inner > li {
     padding: 0; }
 
-  .large-block-grid-5.expand > li {
+  .large-block-grid-5.expand > li,
+  .large-block-grid-5.expand-inner > li {
     padding: 0; }
 
-  .small-block-grid-6.expand > li {
+  .small-block-grid-6.expand > li,
+  .small-block-grid-6.expand-inner > li {
     padding: 0; }
 
-  .large-block-grid-6.expand > li {
+  .large-block-grid-6.expand > li,
+  .large-block-grid-6.expand-inner > li {
     padding: 0; }
 
-  .small-block-grid-7.expand > li {
+  .small-block-grid-7.expand > li,
+  .small-block-grid-7.expand-inner > li {
     padding: 0; }
 
-  .large-block-grid-7.expand > li {
+  .large-block-grid-7.expand > li,
+  .large-block-grid-7.expand-inner > li {
     padding: 0; }
 
-  .small-block-grid-8.expand > li {
+  .small-block-grid-8.expand > li,
+  .small-block-grid-8.expand-inner > li {
     padding: 0; }
 
-  .large-block-grid-8.expand > li {
+  .large-block-grid-8.expand > li,
+  .large-block-grid-8.expand-inner > li {
     padding: 0; }
 
-  .small-block-grid-9.expand > li {
+  .small-block-grid-9.expand > li,
+  .small-block-grid-9.expand-inner > li {
     padding: 0; }
 
-  .large-block-grid-9.expand > li {
+  .large-block-grid-9.expand > li,
+  .large-block-grid-9.expand-inner > li {
     padding: 0; }
 
-  .small-block-grid-10.expand > li {
+  .small-block-grid-10.expand > li,
+  .small-block-grid-10.expand-inner > li {
     padding: 0; }
 
-  .large-block-grid-10.expand > li {
+  .large-block-grid-10.expand > li,
+  .large-block-grid-10.expand-inner > li {
     padding: 0; }
 
-  .small-block-grid-11.expand > li {
+  .small-block-grid-11.expand > li,
+  .small-block-grid-11.expand-inner > li {
     padding: 0; }
 
-  .large-block-grid-11.expand > li {
+  .large-block-grid-11.expand > li,
+  .large-block-grid-11.expand-inner > li {
     padding: 0; }
 
-  .small-block-grid-12.expand > li {
+  .small-block-grid-12.expand > li,
+  .small-block-grid-12.expand-inner > li {
     padding: 0; }
 
-  .large-block-grid-12.expand > li {
+  .large-block-grid-12.expand > li,
+  .large-block-grid-12.expand-inner > li {
     padding: 0; } }
+/* Mobile-list expand */
+.mobile-list.expand {
+  margin: 0 -0.9375em; }

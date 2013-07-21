@@ -109,11 +109,50 @@
 
       <div class="row">
         <div class="large-12 columns">
-          <ul class="small-block-grid-2 large-block-grid-4 expand">
+          <ul class="small-block-grid-2 large-block-grid-4 expand" id="block-grid-expand">
             <li><img class="th" src="./img/demo1.jpg"></li>
             <li><img class="th" src="./img/demo2.jpg"></li>
             <li><img class="th" src="./img/demo3.jpg"></li>
             <li><img class="th" src="./img/demo4.jpg"></li>
+          </ul>
+        </div>
+      </div>
+
+      <p>Or, you may wish for just the inner elements to touch, but have
+      the outer container maintain its padding from the edge of the
+      screen. In that case, just add the <code>expand-inner</code> class to
+      the block-grid element instead.</p>
+
+      <p><a href="#" id="toggle-expand-inner">Click here</a> to switch the
+      above block-grid element to the <code>expand-inner</code> class.</p>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Expandable mobile-list</h3>
+      <p>Add the <code>expand</code> class to Foundation Mobile's
+      mobile-list elements to go from this:</p>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <ul class="mobile-list">
+            <li><a href="#">List item 1</a></li>
+            <li><a href="#">List item 2</a></li>
+            <li><a href="#">List item 3</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p>To this:</p>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <ul class="mobile-list expand">
+            <li><a href="#">List item 1</a></li>
+            <li><a href="#">List item 2</a></li>
+            <li><a href="#">List item 3</a></li>
           </ul>
         </div>
       </div>
@@ -164,6 +203,18 @@
 
   <script>
     $(document).foundation();
+
+    $(document).on('click.fmd', '#toggle-expand-inner', function(e) {
+      var $el = $('#block-grid-expand');
+      if ($el.hasClass('expand')) {
+        $el.removeClass('expand').addClass('expand-inner');
+        $(this).parent().find('code').html('expand');
+      } else {
+        $el.removeClass('expand-inner').addClass('expand');
+        $(this).parent().find('code').html('expand-inner');
+      }
+      e.preventDefault();
+    });
   </script>
 </body>
 </html>
