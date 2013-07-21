@@ -70,6 +70,15 @@
       top: 50%;
       right: 5%;
     }
+
+    &.list-divider {
+      font-weight: bold;
+      font-size: 0.8em;
+      padding-left: 20px;
+      padding-right: 30px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
   }
 
   &.with-icons {
