@@ -43,33 +43,55 @@
       </ul>
     </section>
   </nav>
+  <nav class="top-bar secondary mobile-breadcrumbs">
+    <section class="top-bar-section">
+      <div id="breadcrumbs">
+        <ul class="left back-button">
+          <li>
+            <a href="index.html">◀ Back</a>
+          </li>
+        </ul>
+        <ul class="left dropdown-button">
+          <li class="has-dropdown active">
+            <a class="truncate" href="#">Mobile-friendly breadcrumbs - way cool </a>
+            <ul class="dropdown">
+              <li><a href="index.html">Demo homepage</a></li>
+              <li><a href="/">Source code</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </nav>
 
   <div class="row">
     <div class="large-12 columns">
-      <p>This demo is using Foundation Mobile with Foundation version 4.2.3 and should work fine with Foundation 4.x.x.</p>
+      <h2>Mobile-friendly Back-button</h2>
+      <p>In mobile interfaces, you sometimes need a user-friendly
+      back-button within the interface itself (without relying on the
+      mobile browser chrome).</p>
       <hr />
     </div>
   </div>
 
   <div class="row">
-    <div class="large-8 columns">
-      <h3>The Components</h3>
+    <div class="large-12 columns">
+      <p>To attach a back-button or link, simply attach the
+      <code>data-back</code> attribute to a link. The link's
+      <code>href</code> attribute may be just a non-functional
+      <code>#</code>, or it could degrade gracefully to a normal link if
+      you can set the href destination at the application level.</p>
 
-      <!-- Grid Example -->
-      <div class="row">
-        <div class="large-12 columns">
-          <ul class="mobile-list">
-            <li><a href="lists.html">Mobile-friendly lists <i class="chevron"></i></a></li>
-            <li><a href="collapsible.html">Collapsible content <i class="chevron"></i></a></li>
-            <li><a href="dropdowns.html">Mobile-friendly dropdowns <i class="chevron"></i></a></li>
-            <li><a href="footer.html">Fixed bottom bar (mobile footer) <i class="chevron"></i></a></li>
-            <li><a href="modal-windows.html">Full-screen modal windows <i class="chevron"></i></a></li>
-            <li><a href="truncated-elements.html">Truncated elements <i class="chevron"></i></a></li>
-            <li><a href="back-button.html">Back Button <i class="chevron"></i></a></li>
-            <li><a href="breadcrumbs.html">Mobile-friendly breadcrumbs <i class="chevron"></i></a></li>
-            <li><a href="responsive-tables.html">Responsive tables <i class="chevron"></i></a></li>
-          </ul>
-        </div>
+      <ul class="small-block-grid-3">
+        <li>
+          <a href="#" class="button" data-back>&laquo; Back</a>
+        </li>
+        <li>
+          <a href="#" class="button round small secondary" data-back>◀ Back</a>
+        </li>
+        <li>
+          <a href="#" data-back>Back</a>
+        </li>
       </div>
     </div>
   </div>
