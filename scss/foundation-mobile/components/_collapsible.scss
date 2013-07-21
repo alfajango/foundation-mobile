@@ -1,0 +1,47 @@
+[data-collapsible] {
+  margin-left: -0.9375em;
+  margin-right: -0.9375em;
+  padding: 0.625em;
+  padding-left: 2.9375em;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  position: relative;
+
+  &.with-bottom {
+    border-bottom: 1px solid #ccc;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  > *:first-child {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &:before {
+    content: "";
+    display: block;	
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    padding: 0px;
+    border-top: 0.25em solid #ccc;
+    border-right: 0.25em solid #ccc;
+    left: 1em;
+    top: 1em;
+    margin: 0;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}
+
+[data-collapsible].collapsed {
+  &:before {
+    left: 0.875em;
+    top: 1.125em;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
