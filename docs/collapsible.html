@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="css/foundation/foundation.css" />
   <link rel="stylesheet" href="css/foundation-mobile.css" />
-
+  <link rel="stylesheet" href="css/vendor/fonts.css" />
 
   <script src="js/vendor/custom.modernizr.js"></script>
 
@@ -46,30 +46,75 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <p>This demo is using Foundation Mobile with Foundation version 4.2.3 and should work fine with Foundation 4.x.x.</p>
+      <h2>Collapsible Content</h2>
+      <p>The collapsible component allows blocks of content on a page
+      which collapse under the first element in the block.</p>
       <hr />
     </div>
   </div>
 
   <div class="row">
     <div class="large-8 columns">
-      <h3>The Components</h3>
-
-      <!-- Grid Example -->
+      <p>To make a block of content collapsed, simply add the
+      <code>data-collapsible</code> attribute to the block element. If you
+      want the block collapsed by default when the page loads, add the
+      <code>data-collapsed</code> attribute.</p>
       <div class="row">
         <div class="large-12 columns">
-          <ul class="mobile-list">
-            <li><a href="lists.html">Mobile-friendly lists <i class="chevron"></i></a></li>
-            <li><a href="collapsible.html">Collapsible content <i class="chevron"></i></a></li>
-            <li><a href="dropdowns.html">Mobile-friendly dropdowns <i class="chevron"></i></a></li>
-            <li><a href="footer.html">Fixed bottom bar (mobile footer) <i class="chevron"></i></a></li>
-            <li><a href="modal-windows.html">Full-screen modal windows <i class="chevron"></i></a></li>
-            <li><a href="truncated-elements.html">Truncated elements <i class="chevron"></i></a></li>
-            <li><a href="breadcrumbs.html">Mobile-friendly breadcrumbs <i class="chevron"></i></a></li>
-            <li><a href="responsive-tables.html">Responsive tables <i class="chevron"></i></a></li>
-          </ul>
+          <div data-collapsible data-collapsed>
+            <h3>Collapsed</h3>
+            <p>
+            This block of text is collapsed by default.
+            </p>
+          </div>
+          <div data-collapsible>
+            <h3>Not collapsed</h3>
+            <p>
+            This block of text is not collapsed by default.
+            </p>
+          </div>
+          <div data-collapsible data-collapsed>
+            <h3>Collapsed Again</h3>
+            <p>
+            This block of text is collapsed by default.
+            </p>
+          </div>
         </div>
       </div>
+
+      <p>The collapsible content will all collapse under the first-child
+      element within the collapsible block. You should make sure the
+      first-child element is a <code>display: block</code> element to
+      ensure that content doesn't jump around when the parent block is
+      collapsed or uncollapsed.</p>
+
+      <p>For styling purposes, you may also desire for the first element
+      to be only one line tall. You may use the
+      <a href="../truncated-elements">truncate component</a> on the first-child
+      element to achieve this effect.</p>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <div data-collapsible data-collapsed>
+            <h3 class="truncate" data-truncate>This is a really long first element that takes up
+              multiple lines on small screens</h3>
+            <p>
+            This block of text is collapsed by default.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Note</h3>
+        <p><em>Normally, we'd attach the styles for a component to a class and
+        the JavaScript to a <code>data-</code> attribute. However, the
+        collapsible component doesn't work without JavaScript, so we've
+        attached both the styling and the functionality to the
+        <code>data-collapsible</code> attribute. This way, it degrades
+        gracefully to a standard content block when JS is disabled.</em></p>
+      </div>
+
     </div>
   </div>
 
