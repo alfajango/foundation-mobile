@@ -141,7 +141,7 @@ Compile the foundation-mobile CSS from the command line. Make sure you
 have the `sass` rubygem installed (you can do so with `bundle install`):
 
 ```
-scss scss/foundation-mobile.scss docs/css/foundation-mobile.css
+rake css
 ```
 
 Compile the foundation-mobile JS from the command line. Make sure you
@@ -149,5 +149,11 @@ have the `sprockets` rubygem installed (you can do so with `bundle
 install`):
 
 ```
-sprockets -I js/ js/foundation-mobile/index.js > docs/js/foundation-mobile.js
+rake js
+```
+
+Or, to compile stylesheets and javascripts all at once, run:
+
+```
+rake compile
 ```
