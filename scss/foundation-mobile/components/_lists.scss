@@ -40,6 +40,11 @@
       padding-bottom: 15px;
       padding-top: 15px;
 
+      &:hover,
+      &:focus {
+        background: #eee;
+      }
+
       .mobile-icon{
         float: left;
         display: block;

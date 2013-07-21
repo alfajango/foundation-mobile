@@ -30,6 +30,8 @@
     padding-right: 30px;
     padding-bottom: 15px;
     padding-top: 15px; }
+    .mobile-list li a:hover, .mobile-list li a:focus {
+      background: #eee; }
     .mobile-list li a .mobile-icon {
       float: left;
       display: block;
