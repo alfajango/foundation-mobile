@@ -55,6 +55,13 @@
     position: absolute;
     top: 50%;
     right: 5%; }
+  .mobile-list li.list-divider {
+    font-weight: bold;
+    font-size: 0.8em;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px; }
 .mobile-list.with-icons li a {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -112,3 +119,42 @@
 
 *[data-truncate] {
   cursor: pointer; }
+
+[data-collapsible] {
+  margin-left: -0.9375em;
+  margin-right: -0.9375em;
+  padding: 0.625em;
+  padding-left: 2.9375em;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  position: relative; }
+  [data-collapsible].with-bottom {
+    border-bottom: 1px solid #ccc; }
+  [data-collapsible]:hover {
+    cursor: pointer; }
+  [data-collapsible] > *:first-child:hover {
+    cursor: pointer; }
+  [data-collapsible]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    padding: 0px;
+    border-top: 0.25em solid #ccc;
+    border-right: 0.25em solid #ccc;
+    left: 1em;
+    top: 1em;
+    margin: 0;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg); }
+
+[data-collapsible].collapsed:before {
+  left: 0.875em;
+  top: 1.125em;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.button-group.full-width {
+  margin: 0 -0.9375em; }
