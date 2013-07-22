@@ -122,6 +122,24 @@
 *[data-truncate] {
   cursor: pointer; }
 
+.top-bar.primary {
+  margin-bottom: 0; }
+
+#mobile-breadcrumbs, .mobile-breadcrumbs {
+  overflow: visible; }
+
+.top-bar.secondary .back-button {
+  width: 25%; }
+.top-bar.secondary .dropdown-button {
+  width: 75%; }
+  .top-bar.secondary .dropdown-button li a {
+    padding-right: 30px; }
+
+@media only screen and (min-width: 58.75em) {
+  .top-bar.secondary .dropdown-button {
+    width: inherit; }
+  .top-bar.secondary .back-button {
+    display: none; } }
 [data-collapsible] {
   margin-left: -0.9375em;
   margin-right: -0.9375em;

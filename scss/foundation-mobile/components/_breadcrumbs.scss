@@ -1,0 +1,30 @@
+.top-bar.primary{
+  margin-bottom: 0;
+}
+
+#mobile-breadcrumbs, .mobile-breadcrumbs {
+  overflow: visible;
+}
+
+.top-bar.secondary{
+  .back-button{
+    width: 25%;
+  }
+  .dropdown-button{
+    width: 75%;
+    li a{
+      padding-right: 30px;
+    }
+  }
+}
+
+@media only screen and (min-width: 58.75em) {
+  .top-bar.secondary{
+    .dropdown-button{
+      width: inherit;
+    }
+    .back-button{
+      display: none;
+    }
+  }
+}
