@@ -127,6 +127,107 @@
           </ul>
         </div>
       </div>
+
+      <h3>Split List Elements</h3>
+
+      <p>For split list items, add the <code>split-list</code> class to your <code>ul</code> or <code>ol</code> element, and then use Foundation's standard grid inside your <code>li</code> elements.</p>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <ul class="mobile-list split-list">
+            <li class="row">
+              <a class="small-4 columns" href="#">Item 1a is very long</a>
+              <a class="small-8 columns" href="#">List item 1b<i class="chevron"></i></a>
+            </li>
+            <li class="row">
+                <div class="small-4 columns">Item 2a is not a link</div>
+                <a class="small-8 columns" href="#">List item 2b<i class="chevron"></i></a>
+            </li>
+            <li class="row">
+                <a class="small-4 columns" href="#">Item 3a</a>
+                <a class="small-8 columns" href="#">List item 3b<i class="chevron"></i></a>
+            </li>
+            <li class="row">
+                <a class="small-4 columns" href="#">Item 4a</a>
+                <a class="small-8 columns" href="#">List item 4b<i class="chevron"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p>You may also nest a grid inside one of the links. Below, we have a table with two columns within the first link.</p>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <ul class="mobile-list split-list">
+            <li class="row">
+              <a class="small-10 columns" href="#">
+                <div class="row">
+                  <div class="small-4 columns">
+                    1a
+                  </div>
+                  <div class="small-8 columns">
+                    Item 1b
+                  </div>
+                </div>
+              </a>
+              <a class="small-2 columns" href="#">1c</a>
+            </li>
+            <li class="row">
+              <a class="small-10 columns" href="#">
+                <div class="row">
+                  <div class="small-4 columns">
+                    2a
+                  </div>
+                  <div class="small-8 columns">
+                    Item 2b
+                  </div>
+                </div>
+              </a>
+              <a class="small-2 columns" href="#">2c</a>
+            </li>
+            <li class="row">
+              <a class="small-10 columns" href="#">
+                <div class="row">
+                  <div class="small-4 columns">
+                    3a
+                  </div>
+                  <div class="small-8 columns">
+                    Item 3b
+                  </div>
+                </div>
+              </a>
+              <a class="small-2 columns" href="#">3c</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Note</h3>
+        <p><em>If you want to use list dividers in a split-list, you must add a div with the <code>row</code> class within the <code>li</code> elements, instead of adding the <code>row</code> class to the <code>li</code> elements directly.</em></p>
+        <p><em>This is due to CSS <code>display: table-cell</code>'s lack of a <code>colspan</code> property. If using the <code>row</code> class directly on the <code>li</code> elements, the list-divider could only span the width of the first split-list column.</em></p>
+      </div>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <ul class="mobile-list split-list">
+            <li class="list-divider">A wild divider appears!</li>
+            <li>
+              <div class="row">
+                <a class="small-4 columns" href="#">Item 1a is very long</a>
+                <a class="small-8 columns" href="#">List item 1b<i class="chevron"></i></a>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <a class="small-4 columns" href="#">Item 2a</a>
+                <a class="small-8 columns" href="#">List item 2b<i class="chevron"></i></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 

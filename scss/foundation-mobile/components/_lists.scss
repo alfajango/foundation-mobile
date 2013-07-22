@@ -109,6 +109,35 @@
       border-bottom: none;
     }
   }
+
+  &.split-list {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+    li {
+      display: table;
+      width: 100%;
+    }
+    li.row, li > .row {
+      display: table-row;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      > .columns {
+        display: table-cell;
+        float: none;
+        height: 100%;
+        vertical-align: middle;
+        border-right: solid 1px #e7e7e7;
+      }
+      > .columns:last-child {
+        border-right: none;
+      }
+    }
+    li.list-divider {
+      display: block;
+    }
+  }
 }
 
 @media only screen and (min-width: 48em) {
