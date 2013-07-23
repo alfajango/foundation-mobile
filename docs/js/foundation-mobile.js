@@ -309,13 +309,19 @@
       $(this.scope)
         .off('.fndtn.collapsible')
         .on('click.fndtn.collapsible', '[data-collapsible]', function (e) {
-          var element = $(this).closest('[data-collapsible]');
-          if (element.hasClass('collapsed')) {
-            self.uncollapse(element);
-          } else {
-            self.collapse(element);
+          var element = $(this).closest('[data-collapsible]'),
+              clicked = $(e.target);
+
+          // Make sure current click wasn't a link within collapsible element,
+          // but don't need to check all the way up the dom (just up to collapsible element)
+          if (! clicked.closest('a,[data-collapsible]').is('a')) {
+            if (element.hasClass('collapsed')) {
+              self.uncollapse(element);
+            } else {
+              self.collapse(element);
+            }
+            e.preventDefault();
           }
-          e.preventDefault();
         });
 
       return true;
@@ -323,14 +329,14 @@
 
     collapse: function(element) {
       var self = this;
-      element.addClass('collapsed');
+      element.removeClass('uncollapsed').addClass('collapsed');
       element.children().not(':first-child').hide();
     },
 
     uncollapse: function(element) {
       var self = this;
       element.children().show();
-      element.removeClass('collapsed');
+      element.removeClass('collapsed').addClass('uncollapsed');
     },
 
     reflow : function () {}
