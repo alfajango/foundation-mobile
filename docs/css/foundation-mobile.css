@@ -2,14 +2,16 @@
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px; }
-  .mobile-list.round li:first-child {
+  .mobile-list.round li:first-child,
+  .mobile-list.round li:first-child a {
     -webkit-border-top-left-radius: 10px;
     -webkit-border-top-right-radius: 10px;
     -moz-border-radius-topleft: 10px;
     -moz-border-radius-topright: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px; }
-  .mobile-list.round li:last-child {
+  .mobile-list.round li:last-child,
+  .mobile-list.round li:last-child a {
     -webkit-border-bottom-right-radius: 10px;
     -webkit-border-bottom-left-radius: 10px;
     -moz-border-radius-bottomright: 10px;
@@ -30,7 +32,7 @@
     padding-right: 30px;
     padding-bottom: 15px;
     padding-top: 15px; }
-    .mobile-list li a:hover, .mobile-list li a:focus {
+    .mobile-list li a:active, .mobile-list li a:focus {
       background: #eee; }
     .mobile-list li a .mobile-icon {
       float: left;
@@ -79,8 +81,7 @@
     border-bottom: none; }
 .mobile-list.split-list {
   display: table;
-  border-collapse: collapse;
-  width: 100%; }
+  border-collapse: collapse; }
   .mobile-list.split-list li {
     display: table;
     width: 100%; }
@@ -94,11 +95,14 @@
       float: none;
       height: 100%;
       vertical-align: middle;
-      border-right: solid 1px #e7e7e7; }
+      border-right: solid 1px #ddd; }
     .mobile-list.split-list li.row > .columns:last-child, .mobile-list.split-list li > .row > .columns:last-child {
       border-right: none; }
   .mobile-list.split-list li.list-divider {
     display: block; }
+
+.no-touch .mobile-list li a:hover {
+  background: #eee; }
 
 @media only screen and (min-width: 48em) {
   .mobile-list li {

@@ -4,7 +4,8 @@
     -moz-border-radius: 10px;
     border-radius: 10px;
 
-    li:first-child {
+    li:first-child,
+    li:first-child a {
       -webkit-border-top-left-radius: 10px;
       -webkit-border-top-right-radius: 10px;
       -moz-border-radius-topleft: 10px;
@@ -12,7 +13,8 @@
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
     }
-    li:last-child {
+    li:last-child,
+    li:last-child a {
       -webkit-border-bottom-right-radius: 10px;
       -webkit-border-bottom-left-radius: 10px;
       -moz-border-radius-bottomright: 10px;
@@ -40,7 +42,7 @@
       padding-bottom: 15px;
       padding-top: 15px;
 
-      &:hover,
+      &:active,
       &:focus {
         background: #eee;
       }
@@ -113,7 +115,6 @@
   &.split-list {
     display: table;
     border-collapse: collapse;
-    width: 100%;
     li {
       display: table;
       width: 100%;
@@ -128,7 +129,7 @@
         float: none;
         height: 100%;
         vertical-align: middle;
-        border-right: solid 1px #e7e7e7;
+        border-right: solid 1px #ddd;
       }
       > .columns:last-child {
         border-right: none;
@@ -139,6 +140,13 @@
     }
   }
 }
+
+.no-touch .mobile-list li a {
+  &:hover {
+    background: #eee;
+  }
+}
+
 
 @media only screen and (min-width: 48em) {
 	.mobile-list li {
