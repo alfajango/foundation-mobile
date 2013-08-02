@@ -1,6 +1,4 @@
 [data-collapsible] {
-  margin-left: -0.9375em;
-  margin-right: -0.9375em;
   padding: 0.625em;
   padding-left: 2.9375em;
   border-left: 1px solid #ccc;
@@ -8,6 +6,7 @@
   border-top: 1px solid #ccc;
   position: relative;
 
+  &:last-child,
   &.with-bottom {
     border-bottom: 1px solid #ccc;
   }

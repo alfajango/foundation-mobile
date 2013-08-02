@@ -29,3 +29,8 @@
 .mobile-list.expand {
   margin: 0 -0.9375em;
 }
+
+[data-collapsible].expand {
+  margin-left: -0.9375em;
+  margin-right: -0.9375em;
+}

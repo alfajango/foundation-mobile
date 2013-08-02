@@ -163,15 +163,13 @@
   .top-bar.secondary .back-button {
     display: none; } }
 [data-collapsible] {
-  margin-left: -0.9375em;
-  margin-right: -0.9375em;
   padding: 0.625em;
   padding-left: 2.9375em;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-top: 1px solid #ccc;
   position: relative; }
-  [data-collapsible].with-bottom {
+  [data-collapsible]:last-child, [data-collapsible].with-bottom {
     border-bottom: 1px solid #ccc; }
   [data-collapsible]:hover {
     cursor: pointer; }
@@ -309,3 +307,7 @@
 /* Mobile-list expand */
 .mobile-list.expand {
   margin: 0 -0.9375em; }
+
+[data-collapsible].expand {
+  margin-left: -0.9375em;
+  margin-right: -0.9375em; }

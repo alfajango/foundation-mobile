@@ -160,6 +160,51 @@
     </div>
   </div>
 
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Expandable collapsible elements</h3>
+      <p>Add the <code>expand</code> class to Foundation Mobile's
+      <code>data-collapsible</code> elements to go from this:</p>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <div data-collapsible data-collapsed>
+            <h3>Collapsed</h3>
+            <p>
+            This block of text is collapsed by default.
+            </p>
+          </div>
+          <div data-collapsible>
+            <h3>Not collapsed</h3>
+            <p>
+            This block of text is not collapsed by default.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p>To this:</p>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <div data-collapsible data-collapsed class="expand">
+            <h3>Collapsed</h3>
+            <p>
+            This block of text is collapsed by default.
+            </p>
+          </div>
+          <div data-collapsible class="expand">
+            <h3>Not collapsed</h3>
+            <p>
+            This block of text is not collapsed by default.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <script>
   document.write('<script src=' +
   ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
