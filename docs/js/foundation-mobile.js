@@ -73,11 +73,12 @@
   var $window = $(window);
 
   var sizeModal = function(modal) {
-    modal.width($window.width() - 30);
-    modal.height($window.height() - 30);
+    modal.css('width', ($window.width() - 30) + 'px');
+    modal.css('height', ($window.height() - 30) + 'px');
   };
 
   var positionClose = function(modal, close, clone) {
+    if (clone.length) {
     var // Foundation's CSS rules position the close element in em, get px
         relativePxOffset = Number(getComputedStyle(close.get(0), "").fontSize.match(/(\d*(\.\d*)?)px/)[1]),
         // Position it 15px below the window scrollTop in addition to its modal-relative offset.
@@ -86,6 +87,7 @@
         right = relativePxOffset * 0.6875 + 15;
 
     clone.css({'top': top, 'right': right, 'z-index': 9999, 'position': 'absolute'})
+    }
   };
 
   $(document)
