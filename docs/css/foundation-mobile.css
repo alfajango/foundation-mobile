@@ -104,7 +104,7 @@
     display: block; }
 
 .no-touch .mobile-list li a:hover {
-  background: #eee; }
+  background-color: #eee; }
 
 .fixed-bottom {
   width: 100%;
