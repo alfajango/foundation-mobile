@@ -99,6 +99,14 @@
     }
   }
 
+  &.with-chevrons {
+    li {
+      a {
+        padding-right: 75px;
+      }
+    }
+  }
+
   &.f-dropdown {
     padding: 0;
     border-left: none;
