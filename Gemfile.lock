@@ -2,11 +2,11 @@ GEM
   remote: https://rubygems.org/
   specs:
     hike (1.2.3)
-    multi_json (1.7.7)
-    rack (1.5.2)
-    rake (10.0.3)
-    sass (3.2.9)
-    sprockets (2.10.0)
+    multi_json (1.11.0)
+    rack (1.6.0)
+    rake (10.4.2)
+    sass (3.4.13)
+    sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
